@@ -23,18 +23,20 @@ Sigue los ejercicios en el manual del laboratorio para obtener pasos detallados.
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/<tu_usuario>/git-security-lab.git
-Navega al directorio:
+
+2. Navega al directorio:
 
    ```bash
    cd git-security-lab
-
+   
+3. Configura el hook pre-commit:
    ```bash
    chmod +x scripts/pre-commit
    ln -s ../../scripts/pre-commit .git/hooks/pre-commit
 
 
 
-Prueba los ejemplos:
+4. Prueba los ejemplos:
 
-Intenta hacer un commit con sensitive_data/secrets.txt incluido y observa cómo se bloquea.
-Firma un commit utilizando secure_commit.txt.
+   - Intenta hacer un commit con sensitive_data/secrets.txt incluido y observa cómo se bloquea.
+   - Firma un commit utilizando secure_commit.txt.
