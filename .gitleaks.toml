@@ -1,0 +1,6 @@
+# Configuración básica de Gitleaks para detectar secretos en repositorios
+[[rules]]
+    description = "Detects AWS Secret Key"
+    regex = '''AWS_SECRET_ACCESS_KEY=([A-Za-z0-9/+=]{40})'''
+    tags = ["AWS"]
+    severity = "CRITICAL"
