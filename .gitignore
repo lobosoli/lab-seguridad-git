@@ -1,0 +1,4 @@
+# Ignorar claves privadas y archivos sensibles
+*.key
+*.pem
+secrets.txt
