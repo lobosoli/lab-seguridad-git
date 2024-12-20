@@ -1,2 +1,4 @@
 Confidential data should not be stored here.
 This file is for testing purposes only.
+
+Número de tarjeta de crédito: 1234-5678-9012-3456, CVC: 123
