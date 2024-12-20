@@ -1,4 +1,4 @@
-# Manual de Laboratorio: Seguridad y Monitoreo en Git
+# Laboratorio: Seguridad y Monitoreo en Git
 
 Este repositorio contiene los ejemplos prácticos del manual de laboratorio sobre seguridad y monitoreo en Git. Aquí podrás encontrar configuraciones para proteger ramas, detectar secretos en tu código, integrar auditorías con Splunk, y limpiar el historial de Git.
 
