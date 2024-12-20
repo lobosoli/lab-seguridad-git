@@ -1,42 +1,28 @@
-# Laboratorio: Seguridad y Monitoreo de Git
+# Manual de Laboratorio: Seguridad y Monitoreo en Git
 
-Este repositorio demuestra prácticas seguras para la gestión y monitoreo de repositorios Git.
+Este repositorio contiene los ejemplos prácticos del manual de laboratorio sobre seguridad y monitoreo en Git. Aquí podrás encontrar configuraciones para proteger ramas, detectar secretos en tu código, integrar auditorías con Splunk, y limpiar el historial de Git.
 
 ## Ejercicios
-1. Configurar firmas GPG para commits seguros.
-2. Implementar hooks de Git para reforzar políticas de seguridad.
-3. Monitorear actividades en el repositorio con GitGuardian.
-4. Auditar el historial del repositorio con BFG Repo-Cleaner.
-5. Integrar registro y monitoreo con herramientas GitOps.
 
-## Estructura
-- **scripts/**: Contiene hooks personalizados de Git.
-- **sensitive_data/**: Archivos de ejemplo con datos sensibles (para asegurar).
-- **examples/**: Scripts de ejemplo para probar prácticas de seguridad.
+1. **Configurar reglas de protección de ramas**
+2. **Uso de Gitleaks para detectar secretos**
+3. **Integrar auditoría con Splunk**
+4. **Reparar un historial de Git con información sensible**
 
 ---
 
-Sigue los ejercicios en el manual del laboratorio para obtener pasos detallados.
+### Requisitos
 
-## Cómo Usar Este Repositorio
+- **Git**
+- **Gitleaks**
+- **Splunk**
+- **GitHub Enterprise**
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/<tu_usuario>/git-security-lab.git
+## Estructura
 
-2. Navega al directorio:
+- **.git/**: Configuración de Git
+- **.gitleaks.toml**: Configuración para Gitleaks
+- **.gitignore**: Archivos que deben ser ignorados por Git
+- **.env**: Ejemplo de archivo con secretos expuestos
+- **config.env**: Archivo con información sensible que se elimina del historial de Git
 
-   ```bash
-   cd git-security-lab
-   
-3. Configura el hook pre-commit:
-   ```bash
-   chmod +x scripts/pre-commit
-   ln -s ../../scripts/pre-commit .git/hooks/pre-commit
-
-
-
-4. Prueba los ejemplos:
-
-   - Intenta hacer un commit con sensitive_data/secrets.txt incluido y observa cómo se bloquea.
-   - Firma un commit utilizando secure_commit.txt.
