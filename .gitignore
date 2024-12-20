@@ -1,4 +1,11 @@
-# Ignorar claves privadas y archivos sensibles
+# Archivos de configuración sensibles
+.env
 *.key
 *.pem
 secrets.txt
+config.env
+
+# Archivos de trabajo de Git
+*.swp
+*.lock
+
