@@ -25,10 +25,12 @@ Sigue los ejercicios en el manual del laboratorio para obtener pasos detallados.
    git clone https://github.com/<tu_usuario>/git-security-lab.git
 Navega al directorio:
 
-cd git-security-lab
+   ```bash
+   cd git-security-lab
 
-chmod +x scripts/pre-commit
-ln -s ../../scripts/pre-commit .git/hooks/pre-commit
+   ```bash
+   chmod +x scripts/pre-commit
+   ln -s ../../scripts/pre-commit .git/hooks/pre-commit
 
 
 
