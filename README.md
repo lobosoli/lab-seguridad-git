@@ -25,16 +25,11 @@ Sigue los ejercicios en el manual del laboratorio para obtener pasos detallados.
    git clone https://github.com/<tu_usuario>/git-security-lab.git
 Navega al directorio:
 
-''' bash
-Copy code
 cd git-security-lab
-Configura el hook pre-commit:
 
-
-''' bash
-Copy code
 chmod +x scripts/pre-commit
 ln -s ../../scripts/pre-commit .git/hooks/pre-commit
+
 
 
 Prueba los ejemplos:
