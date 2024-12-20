@@ -29,13 +29,13 @@ Navega al directorio:
 Copy code
 cd git-security-lab
 Configura el hook pre-commit:
-'''
+
 
 ''' bash
 Copy code
 chmod +x scripts/pre-commit
 ln -s ../../scripts/pre-commit .git/hooks/pre-commit
-'''
+
 
 Prueba los ejemplos:
 
